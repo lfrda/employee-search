@@ -1,0 +1,50 @@
+.form-container {
+	margin-right: 0;
+	margin-left: 0;
+	background-color: #fff;
+	border-color: #ddd;
+	border-width: 1px;
+	position: relative;
+    padding: 45px 15px 15px;
+    margin: 0 -15px 15px;
+    border-style: solid;
+	border-radius: 4px;
+}
+
+.p-l-0 {
+	padding-left: 0 !important;
+}
+
+.p-r-0 {
+	padding-right: 0 !important;
+}
+
+h1, h2, h3, h4, h5 {
+	text-transform: none !important;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.a-i-center {
+	align-items: center;
+}
+
+.a-c-center {
+	align-content: center;
+}
+
+.j-c-center {
+	justify-content: center;
+}
+
+.employee img {
+	max-height: 300px;
+	width: 100%;
+}
+
+#map {
+	height:300px;
+	width: 100%;
+}

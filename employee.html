@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>McFadyen Digital - UI test</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body class="employee">
+        <header>
+            <h1 class="text-center" data-bind="name"></h1>
+        </header>
+    	<div class="container form-container">
+            <div class="row">
+        		<div class="col-xs-12 col-sm-4">
+        			<img src="" id="picture" class="thumbnail" alt="Picture of the employee" /> 
+        		</div>
+    			<div class="details col-xs-12 col-sm-8">
+                    <p>Full name: &nbsp; <span data-bind="name"></span></p>
+                    <p>Gender: &nbsp; <span data-bind="gender"></span></p>
+                    <p>Phone number: &nbsp; <span data-bind="phone"></span></p>
+                    <p>Company: &nbsp; <span data-bind="company"></span></p>
+                    <p>Address: &nbsp; <span data-bind="address"></span></p>
+    					
+    			</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-7">
+                    <p>About employee:</p>
+                    <p data-bind="about"></p>
+                    <span>Employee was registered in the system on:</span>
+                    <time data-bind="registered"></time>
+                <div id="map"></div>
+                </div>
+            </div>            
+    	</div>
+    </body>
+    <script src="./assets/js/moment.min.js"></script>
+    <script src="./assets/js/chosenEmployee.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIbb3jIvmAym3uHATFvUxUiobtmYnIQOs&callback=initMap">
+    </script>
+</html>

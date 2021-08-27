@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>McFadyen Digital - UI test</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <style>
+    
+    </style>
+    <body>
+        <header>
+            <h1 class="text-center">Search for employees</h1>
+        </header>
+        <section name="search-area" class="container p-l-0 p-r-0">
+    		<form>
+    			<div class="form-group">
+    				<input id="search-bar" type="text" onkeyup="return searchEmployee()" placeholder="Ex: Mauro" class="form-control">
+                    <div id="warning-section" role="alert"></div>
+    			</div>
+
+    		</form>
+    	</section>
+    	<section id="results" class="container form-container">
+    		<h1 class="text-center">
+    			Table of results
+    		</h1>
+    		<table class="table">
+    			<thead>
+	    			<tr>
+	    				<th>Picture</th>
+	    				<th>Name</th>
+	    				<th>Age</th>
+	    				<th>Active</th>
+	    				<th>Email</th>
+	    				<th>Phone</th>
+	    				<th>Company</th>
+	    				<th>Balance</th>
+	    			</tr>
+    			</thead>
+    			<tbody id="employees">
+    			</tbody>
+    		</table>
+            <div class="d-flex j-c-center">
+    		  <button class="btn btn-default col-xs-12 col-sm-3" onclick="showMore()" type="button">Show more</button>
+            </div>
+    	</section>
+    </body>
+    <script src="./assets/js/main.js"></script>
+</html>
